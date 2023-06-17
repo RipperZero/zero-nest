@@ -398,3 +398,8 @@ Temporary Items
 dist
 .webpack
 .serverless/**/*.zip
+
+# Lock file
+yarn.lock
+pnpm-lock.yaml
+package.lock.json
