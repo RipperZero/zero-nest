@@ -12,6 +12,8 @@ import {
   Delete,
   UseInterceptors,
   UploadedFiles,
+  HttpException,
+  HttpStatus,
 } from "@nestjs/common";
 import { AnyFilesInterceptor } from "@nestjs/platform-express";
 
@@ -37,6 +39,7 @@ export class PersonController {
 
   @Get()
   findAll() {
+    // throw new HttpException("error message", HttpStatus.BAD_REQUEST);
     return this.personService.findAll();
   }
 

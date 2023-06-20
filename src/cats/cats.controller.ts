@@ -11,7 +11,6 @@ import {
   Put,
   Query,
   Res,
-  UseFilters,
 } from "@nestjs/common";
 import { Response } from "express";
 import { CreateCatDto } from "./dto";

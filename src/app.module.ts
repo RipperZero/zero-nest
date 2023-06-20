@@ -4,7 +4,7 @@ import { APP_FILTER } from "@nestjs/core";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { logger } from "./middleware";
-import { HttpExceptionFilter } from "./filter";
+// import { HttpExceptionFilter } from "./filter";
 import { CatsController, CatsModule } from "./cats";
 import { PersonModule } from "./person";
 import { PersonA } from "app.type";
@@ -13,10 +13,11 @@ import { PersonA } from "app.type";
   imports: [CatsModule, PersonModule],
   controllers: [AppController],
   providers: [
-    {
-      provide: APP_FILTER,
-      useClass: HttpExceptionFilter,
-    },
+    // {
+    //   provide: APP_FILTER,
+    //   useClass: HttpExceptionFilter,
+    // },
+
     // AppService,
     {
       // provide: 'app_service',
@@ -74,7 +75,8 @@ import { PersonA } from "app.type";
 })
 class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(logger).forRoutes(CatsController);
+    // consumer.apply(logger).forRoutes(CatsController);
+    consumer.apply(logger).forRoutes("cats");
   }
 }
 
