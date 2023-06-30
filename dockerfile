@@ -31,4 +31,4 @@ RUN npm install --production
 
 EXPOSE 8080
 
-CMD [ "node", "./app/main.js" ]
+CMD [ "node", "/app/main.js" ]
