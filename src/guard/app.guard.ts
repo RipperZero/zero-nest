@@ -1,3 +1,4 @@
+import { RoleValue } from "@/constants";
 import {
   CanActivate,
   ExecutionContext,
@@ -15,13 +16,30 @@ class AppGuard implements CanActivate {
   canActivate(
     context: ExecutionContext,
   ): boolean | Promise<boolean> | Observable<boolean> {
-    const classMetadata = this.reflector.get("roles", context.getClass());
-    const methodMetadata = this.reflector.get("roles", context.getHandler());
+    const contextType = context.getType();
 
-    console.log("classMetadata-----", classMetadata);
-    console.log("methodMetadata-----", methodMetadata);
+    if (contextType === "http") {
+      // maybe undefined
+      const classRoles = this.reflector.get<RoleValue[]>(
+        "roles",
+        context.getClass(),
+      );
+      // maybe undefined
+      const handlerRoles = this.reflector.get<RoleValue[]>(
+        "roles",
+        context.getHandler(),
+      );
 
-    return true;
+      console.log("classRoles-----", classRoles);
+      console.log("handlerRoles-----", handlerRoles);
+
+      // if (handlerRoles?.includes("zero")) {
+      //   return true;
+      // }
+
+      // return false;
+      return true;
+    }
   }
 }
 

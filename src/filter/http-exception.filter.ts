@@ -9,21 +9,31 @@ import { Request, Response } from "express";
 @Catch(HttpException)
 class HttpExceptionFilter implements ExceptionFilter {
   catch(exception: HttpException, host: ArgumentsHost) {
-    const ctx = host.switchToHttp();
-    const response = ctx.getResponse<Response>();
-    const request = ctx.getRequest<Request>();
+    const contextType = host.getType();
 
-    const status = exception.getStatus();
-    const msg = exception.message;
+    if (contextType === "http") {
+      const ctx = host.switchToHttp();
+      const response = ctx.getResponse<Response>();
+      const request = ctx.getRequest<Request>();
 
-    const timestamp = new Date().toISOString();
+      const status = exception.getStatus();
+      const msg = exception.message;
 
-    response.status(status).json({
-      statusCode: status,
-      timestamp: timestamp,
-      path: request.url,
-      msg: msg,
-    });
+      const timestamp = new Date().toISOString();
+
+      response.status(status).json({
+        statusCode: status,
+        timestamp: timestamp,
+        path: request.url,
+        msg: msg,
+      });
+    }
+
+    if (contextType === "ws") {
+    }
+
+    if (contextType === "rpc") {
+    }
   }
 }
 

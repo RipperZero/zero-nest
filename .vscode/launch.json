@@ -21,6 +21,15 @@
       "type": "chrome",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug Nest",
+      "request": "launch",
+      "type": "node",
+      "runtimeExecutable": "npm",
+      "args": ["run", "start:dev"],
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
     }
   ]
 }

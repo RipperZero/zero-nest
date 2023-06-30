@@ -9,7 +9,7 @@ import { Observable, tap } from "rxjs";
 @Injectable()
 class LogInterceptor implements NestInterceptor {
   intercept(
-    _context: ExecutionContext,
+    _executionContext: ExecutionContext,
     next: CallHandler<any>,
   ): Observable<any> | Promise<Observable<any>> {
     const startStamp = Date.now();

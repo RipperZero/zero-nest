@@ -20,12 +20,15 @@
     "uninstall packages": "rimraf ./node_modules"
   },
   "dependencies": {
+    "@fastify/static": "^6.10.2",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/platform-fastify": "^10.0.3",
     "dayjs": "^1.11.8",
     "express-session": "^1.17.3",
+    "fastify": "^4.18.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },

@@ -1,6 +1,6 @@
 import {
   Body,
-  Controller,
+  // Controller,
   Get,
   Headers,
   // HttpException,
@@ -14,8 +14,8 @@ import {
   Query,
   Res,
   Session,
-  SetMetadata,
-  UseGuards,
+  // SetMetadata,
+  // UseGuards,
   UsePipes,
   // UseFilters,
 } from "@nestjs/common";
@@ -25,7 +25,7 @@ import { AppService } from "./app.service";
 import { PersonA, PersonB } from "app.type";
 import { AppGuard } from "./guard";
 import { TransformPipe } from "./pipe";
-import { AppControllerDecorator, MyHeaders, MyQuery } from "./decorator";
+import { AppControllerDecorator, MyHeaders, MyQuery, Roles } from "./decorator";
 // import { HttpExceptionFilter } from "./filter";
 
 // @Controller()
@@ -33,7 +33,8 @@ import { AppControllerDecorator, MyHeaders, MyQuery } from "./decorator";
 @AppControllerDecorator({
   useGuardsParam: AppGuard,
 })
-@SetMetadata("roles", "admin")
+// @SetMetadata("roles", "admin")
+@Roles("admin", "user")
 export class AppController {
   // constructor(@Inject('app_service') private readonly appService: AppService) {}
   constructor(
@@ -56,7 +57,8 @@ export class AppController {
   @Get()
   // move HttpExceptionFilter to app.module.ts
   // @UseFilters(HttpExceptionFilter)
-  @SetMetadata("roles", ["zero"])
+  // @SetMetadata("roles", ["zero"])
+  @Roles("zero")
   getHello(): string {
     // throw new HttpException("error message", HttpStatus.BAD_REQUEST);
     console.log(this.person);
