@@ -36,7 +36,7 @@ const bootstrap = async () => {
   app.useGlobalFilters(new HttpExceptionFilter());
   app.useGlobalInterceptors(new LogInterceptor());
 
-  await app.listen(8888);
+  await app.listen(8080);
 };
 
 bootstrap();
