@@ -8,10 +8,10 @@ import { logger } from "./middleware";
 import { CatsController, CatsModule } from "./decorator/cats";
 import { PersonModule } from "./person";
 import { PersonA } from "app.type";
-import { CommonModule } from "./@common/common.module";
-import { ADLModule } from "./adl/adl.module";
-import { MedicalGateModule } from "./medical-gate/medical-gate.module";
-import { ReceptionModule } from "./reception/reception.module";
+// import { CommonModule } from "./@common/common.module";
+// import { ADLModule } from "./adl/adl.module";
+// import { MedicalGateModule } from "./medical-gate/medical-gate.module";
+// import { ReceptionModule } from "./reception/reception.module";
 import { TimeModule } from "./time/time.module";
 
 @Module({
@@ -19,10 +19,10 @@ import { TimeModule } from "./time/time.module";
     CatsModule,
     PersonModule,
     TimeModule,
-    CommonModule,
-    ADLModule,
-    ReceptionModule,
-    MedicalGateModule,
+    // CommonModule,
+    // ADLModule,
+    // ReceptionModule,
+    // MedicalGateModule,
   ],
   controllers: [AppController],
   providers: [
