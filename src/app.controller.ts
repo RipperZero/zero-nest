@@ -19,10 +19,10 @@ import {
   UsePipes,
   // UseFilters,
 } from "@nestjs/common";
-import { Response } from "express";
+import type { Response } from "express";
 
 import { AppService } from "./app.service";
-import { PersonA, PersonB } from "app.type";
+import type { PersonA, PersonB } from "app.type";
 import { AppGuard } from "./guard";
 import { TransformPipe } from "./pipe";
 import { AppControllerDecorator, MyHeaders, MyQuery, Roles } from "./decorator";
@@ -97,13 +97,14 @@ export class AppController {
   }
 
   @Get("session")
-  getSession(@Session() session) {
+  getSession(@Session() session: Record<string, unknown>) {
     console.log(session);
     if (session.count === undefined) {
       session.count = 0;
       return session.count;
     }
 
+    // @ts-expect-error:next-line
     session.count++;
 
     return session.count;
@@ -151,7 +152,7 @@ export class AppController {
   @Post("transformPipe")
   @UsePipes(TransformPipe)
   useTransformPipe(
-    @Body() data,
+    @Body() data: unknown,
     // @Body("aaa") data
   ) {
     return data;

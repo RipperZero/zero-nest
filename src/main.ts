@@ -1,7 +1,7 @@
 import { NestFactory } from "@nestjs/core";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { join } from "path";
-import * as expressSession from "express-session";
+import expressSession from "express-session";
 // import {
 //   FastifyAdapter,
 //   NestFastifyApplication,
@@ -34,9 +34,11 @@ const bootstrap = async () => {
   );
 
   app.useGlobalFilters(new HttpExceptionFilter());
-  app.useGlobalInterceptors(new LogInterceptor());
+  // app.useGlobalInterceptors(new LogInterceptor());
 
-  await app.listen(8080);
+  app.enableCors();
+
+  await app.listen(process.env.PORT ?? 8080);
 };
 
 bootstrap();

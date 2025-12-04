@@ -13,9 +13,9 @@ const AppControllerDecorator = ({
   useGuardsParam?: Parameters<typeof UseGuards>[0];
 }) => {
   return applyDecorators(
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore:next-line
+    // @ts-expect-error:next-line
     Controller(controllerParam),
+    // @ts-expect-error:next-line
     UseGuards(useGuardsParam),
   );
 };

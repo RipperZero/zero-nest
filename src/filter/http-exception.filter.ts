@@ -29,11 +29,11 @@ class HttpExceptionFilter implements ExceptionFilter {
       });
     }
 
-    if (contextType === "ws") {
-    }
+    // if (contextType === "ws") {
+    // }
 
-    if (contextType === "rpc") {
-    }
+    // if (contextType === "rpc") {
+    // }
   }
 }
 

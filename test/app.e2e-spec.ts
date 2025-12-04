@@ -1,4 +1,4 @@
-import * as request from "supertest";
+import request from "supertest";
 import { Test } from "@nestjs/testing";
 import { AppModule } from "./../src/app.module";
 import { INestApplication } from "@nestjs/common";
@@ -20,6 +20,7 @@ describe("AppController (e2e)", () => {
   });
 
   it("/ (GET)", () => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     return request(app.getHttpServer())
       .get("/")
       .expect(200)

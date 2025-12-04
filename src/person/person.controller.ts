@@ -12,8 +12,6 @@ import {
   Delete,
   UseInterceptors,
   UploadedFiles,
-  HttpException,
-  HttpStatus,
 } from "@nestjs/common";
 import { AnyFilesInterceptor } from "@nestjs/platform-express";
 

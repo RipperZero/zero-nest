@@ -5,20 +5,32 @@ import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { logger } from "./middleware";
 // import { HttpExceptionFilter } from "./filter";
-import { CatsController, CatsModule } from "./cats";
+import { CatsController, CatsModule } from "./decorator/cats";
 import { PersonModule } from "./person";
 import { PersonA } from "app.type";
+import { CommonModule } from "./@common/common.module";
+import { ADLModule } from "./adl/adl.module";
+import { MedicalGateModule } from "./medical-gate/medical-gate.module";
+import { ReceptionModule } from "./reception/reception.module";
+import { TimeModule } from "./time/time.module";
 
 @Module({
-  imports: [CatsModule, PersonModule],
+  imports: [
+    CatsModule,
+    PersonModule,
+    TimeModule,
+    CommonModule,
+    ADLModule,
+    ReceptionModule,
+    MedicalGateModule,
+  ],
   controllers: [AppController],
   providers: [
     // {
     //   provide: APP_FILTER,
     //   useClass: HttpExceptionFilter,
     // },
-
-    // AppService,
+    AppService,
     {
       // provide: 'app_service',
       provide: AppService,
@@ -56,7 +68,7 @@ import { PersonA } from "app.type";
     },
     {
       provide: "person5",
-      useFactory: async () => {
+      useFactory: () => {
         // await new Promise((resolve) => {
         //   setTimeout(resolve, 3000);
         // });
@@ -64,7 +76,6 @@ import { PersonA } from "app.type";
           // eslint-disable-next-line @typescript-eslint/no-empty-function
           setTimeout(() => {}, 3000);
         });
-
         return {
           name: "person5",
           desc: "5555555555",

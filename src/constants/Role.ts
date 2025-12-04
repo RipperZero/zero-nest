@@ -6,4 +6,5 @@ const Role = {
   ZERO: "zero",
 } as const;
 
-export { RoleValue, Role };
+export { Role };
+export type { RoleValue };

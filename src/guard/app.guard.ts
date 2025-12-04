@@ -40,6 +40,8 @@ class AppGuard implements CanActivate {
       // return false;
       return true;
     }
+
+    return false;
   }
 }
 

@@ -16,7 +16,7 @@ class PersonService {
     return `This action returns a #${id} person`;
   }
 
-  update(id: number, updatePersonDto: UpdatePersonDto) {
+  update(id: number, _updatePersonDto: UpdatePersonDto) {
     return `This action updates a #${id} person`;
   }
 

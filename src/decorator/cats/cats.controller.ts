@@ -12,7 +12,7 @@ import {
   Query,
   Res,
 } from "@nestjs/common";
-import { Response } from "express";
+import type { Response } from "express";
 import { CreateCatDto } from "./dto";
 import { CatsService } from "./cats.service";
 
