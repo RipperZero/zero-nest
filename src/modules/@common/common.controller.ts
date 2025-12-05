@@ -1,5 +1,5 @@
 import { Controller } from "@nestjs/common/decorators/core/controller.decorator";
-import { ApiResponse } from "../vo/api-response";
+import { ApiResponse } from "../time/vo/api-response";
 import { Body } from "@nestjs/common/decorators/http/route-params.decorator";
 import { Post } from "@nestjs/common/decorators/http/request-mapping.decorator";
 import { HttpCode } from "@nestjs/common/decorators/http/http-code.decorator";

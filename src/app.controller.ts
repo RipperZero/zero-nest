@@ -1,8 +1,9 @@
 import { Get } from "@nestjs/common";
 
 import { AppService } from "./app.service";
-import { AppGuard } from "./guard";
-import { AppControllerDecorator, Roles } from "./decorator";
+import { AppControllerDecorator } from "./common/decorators/appController.decorator";
+import { Roles } from "./common/decorators/roles.decorator";
+import { AppGuard } from "./common/guards/app.guard";
 
 // @Controller()
 // @UseGuards(AppGuard)

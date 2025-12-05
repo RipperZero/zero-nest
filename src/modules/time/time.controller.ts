@@ -1,7 +1,7 @@
 import { Controller } from "@nestjs/common/decorators/core/controller.decorator";
 import { TimeService } from "./time.service";
 import { Get } from "@nestjs/common/decorators/http/request-mapping.decorator";
-import { ApiResponse } from "../vo/api-response";
+import { ApiResponse } from "./vo/api-response";
 
 @Controller("/time")
 class TimeController {

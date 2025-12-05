@@ -8,8 +8,8 @@ import expressSession from "express-session";
 // } from "@nestjs/platform-fastify";
 
 import { AppModule } from "./app.module";
-import { HttpExceptionFilter } from "./filter";
-import { LogInterceptor } from "./interceptor/log.interceptor";
+import { LogInterceptor } from "./common/interceptors/log.interceptor";
+import { HttpExceptionFilter } from "./common/filters/http-exception.filter";
 
 const bootstrap = async () => {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
