@@ -1,4 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
+import { GraphQLModule } from "@nestjs/graphql";
+import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
@@ -12,6 +14,12 @@ import { TimeModule } from "./modules/time/time.module";
     // ADLModule,
     // ReceptionModule,
     // MedicalGateModule,
+
+    // #region GraphQL ---start
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+    }),
+    // #endregion GraphQL ---end
   ],
   controllers: [AppController],
   providers: [
