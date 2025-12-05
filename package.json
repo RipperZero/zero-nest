@@ -21,7 +21,6 @@
     "uninstall packages": "rimraf ./node_modules"
   },
   "dependencies": {
-    "@eslint/js": "^9.39.1",
     "@faker-js/faker": "^10.1.0",
     "@fastify/static": "^8.3.0",
     "@nestjs/common": "^11.1.9",
@@ -36,6 +35,8 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.1",
     "@nestjs/cli": "^11.0.14",
     "@nestjs/schematics": "^11.0.9",
     "@nestjs/testing": "^11.1.9",
@@ -50,7 +51,6 @@
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "esm": "^3.2.25",
     "globals": "^16.5.0",
     "jest": "^30.2.0",
     "node-modules-inspector": "^1.2.0",
