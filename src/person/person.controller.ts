@@ -10,25 +10,25 @@ import {
   Query,
   Patch,
   Delete,
-  UseInterceptors,
-  UploadedFiles,
+  // UseInterceptors,
+  // UploadedFiles,
 } from "@nestjs/common";
-import { AnyFilesInterceptor } from "@nestjs/platform-express";
+// import { AnyFilesInterceptor } from "@nestjs/platform-express";
 
 @Controller("person")
 export class PersonController {
   constructor(private readonly personService: PersonService) {}
 
-  @Post("upload")
-  @UseInterceptors(AnyFilesInterceptor({ dest: "uploads/" }))
-  upload(
-    @Body() createPersonDto: CreatePersonDto,
-    @UploadedFiles() files: Array<Express.Multer.File>,
-  ) {
-    console.log(files);
+  // @Post("upload")
+  // @UseInterceptors(AnyFilesInterceptor({ dest: "uploads/" }))
+  // upload(
+  //   @Body() createPersonDto: CreatePersonDto,
+  //   @UploadedFiles() files: Array<Express.Multer.File>,
+  // ) {
+  //   console.log(files);
 
-    return this.personService.create(createPersonDto);
-  }
+  //   return this.personService.create(createPersonDto);
+  // }
 
   @Post()
   create(@Body() createPersonDto: CreatePersonDto) {
