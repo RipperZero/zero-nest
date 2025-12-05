@@ -16,9 +16,9 @@ import { TimeModule } from "./modules/time/time.module";
     // MedicalGateModule,
 
     // #region GraphQL ---start
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-    }),
+    // GraphQLModule.forRoot<ApolloDriverConfig>({
+    //   driver: ApolloDriver,
+    // }),
     // #endregion GraphQL ---end
   ],
   controllers: [AppController],
