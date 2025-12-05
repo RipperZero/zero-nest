@@ -40,6 +40,7 @@ const eslintConfig = defineConfig([
         },
       ],
       "no-extra-boolean-cast": "off",
+      "no-irregular-whitespace": "warn",
     },
   },
 ]);
