@@ -1,0 +1,33 @@
+{
+  "result": true,
+  "msg": null,
+  "data": {
+    "kanjyaNo": "0000000001",
+    "kanaName": "ｼｶｸ ｼﾞｼﾛ",
+    "name": "健康",
+    "birth": 19510511,
+    "seibetsu": "男",
+    "oldKanaName": "ﾃｽﾄ ｼｶｸ",
+    "oldName": "テスト　資格",
+    "tel": "1",
+    "keitaiNo": "2",
+    "email": "XXXXXX@qq.com",
+    "postNo": "123-4567",
+    "address1": "住所１",
+    "address2": "住所2",
+    "syokugyou": "医師１",
+    "comment1": "連絡事項１",
+    "comment2": "連絡事項2",
+    "kinmuName": "勤務先名",
+    "kinmuTelNo": "勤務先電話番号",
+    "kinmuPostNo": "勤務先-郵便番号",
+    "kinmuAddress1": "勤務先住所１",
+    "kinmuAddress2": "勤務先住所2",
+    "renrakuName": "その他連絡先名",
+    "renrakuPostNo": "連絡先-郵便番号",
+    "renrakuTelNo": "連絡先電話番号",
+    "renrakuAddress1": "連絡先住所１",
+    "renrakuAddress2": "連絡先住所2",
+    "id": "0000000001"
+  }
+}

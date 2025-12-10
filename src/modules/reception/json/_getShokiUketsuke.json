@@ -1,0 +1,165 @@
+{
+  "result": true,
+  "msg": null,
+  "data": {
+    "kanjyaJyouhou": {
+      "kanjyaNo": "0000000001",
+      "kanaName": "シカク　ジシロ",
+      "name": "健康",
+      "birth": 19510511,
+      "seibetsu": "男",
+      "postNo": "123-4567",
+      "address1": "住所１",
+      "address2": "住所２",
+      "sinnkannFlag": false
+    },
+    "sameNameCheckKanjyaNoList": [],
+    "uketsukeKa": [
+      {
+        "kaCode": "01",
+        "kamei": "内科"
+      },
+      {
+        "kaCode": "02",
+        "kamei": "外科"
+      }
+    ],
+    "jyushinNaiyou": [
+      {
+        "naiyouCode": "01",
+        "naiyouDisplayName": "診察"
+      },
+      {
+        "naiyouCode": "02",
+        "naiyouDisplayName": "検査"
+      },
+      {
+        "naiyouCode": "03",
+        "naiyouDisplayName": "注射"
+      },
+      {
+        "naiyouCode": "04",
+        "naiyouDisplayName": "投薬"
+      }
+    ],
+    "onlineKanjyaJyouhou": {
+      "kanjyaNo": "0000000001",
+      "kanaName": "シカク　ジシロ",
+      "name": "健康",
+      "birth": 19510511,
+      "seibetsu": "男",
+      "postNo": "123-4567",
+      "address1": "住所１",
+      "address2": "住所２",
+      "sinnkannFlag": false
+    },
+    "matijyoutai": [
+      {
+        "code": "0",
+        "value": "受診なし"
+      },
+      {
+        "code": "1",
+        "value": "受診待ち"
+      },
+      {
+        "code": "0",
+        "value": "受診なし"
+      },
+      {
+        "code": "0",
+        "value": "受診なし"
+      }
+    ],
+    "connect": [
+      {
+        "code": "01",
+        "value": "0"
+      },
+      {
+        "code": "02",
+        "value": "1"
+      },
+      {
+        "code": "03",
+        "value": "0"
+      },
+      {
+        "code": "04",
+        "value": "0"
+      }
+    ],
+    "raiinData": {
+      "uketsukeDate": 20241017,
+      "uketsukeNo": 1,
+      "kanjyaNo": "0000000001",
+      "uketsukeKa": "1",
+      "uketsukeSyousai": "",
+      "mainDoctorCode": "0",
+      "uketsukeNoKa": 1,
+      "uketsukeNaiyous": [
+        "02",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "machiJyoutais": [
+        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "sinsatsuzumi": 0,
+      "uketsukeComent": "",
+      "sinsatsuEndTime": 0
+    },
+    "uketsukeDoctor": [
+      {
+        "doctorCode": "00",
+        "doctorName": "ー"
+      },
+      {
+        "doctorCode": "01",
+        "doctorName": "鈴木"
+      },
+      {
+        "doctorCode": "02",
+        "doctorName": "吉田連携"
+      }
+    ]
+  }
+}

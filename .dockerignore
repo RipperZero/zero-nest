@@ -1,0 +1,19 @@
+# Node.js Tools for Visual Studio
+node_modules/
+
+.git/
+### macOS template
+# General
+.DS_Store
+
+# IDE - VSCode
+.vscode/
+
+# Lock file
+yarn.lock
+pnpm-lock.yaml
+package.lock.json
+
+*.md
+
+.dockerignore

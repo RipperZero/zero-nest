@@ -1,0 +1,53 @@
+{
+  "result": true,
+  "msg": null,
+  "data": {
+    "uketsukeMatiData": [
+      {
+        "name": "資格　一郎",
+        "mainDoctor": "",
+        "kanjyaNo": "0000000011",
+        "uketsukeKaNo": 0,
+        "uketsukeTime": 102530,
+        "uketsukeNo": 0,
+        "birth": 20220214,
+        "kanaName": "ｼｶｸ ｲﾁﾛｳ",
+        "uketsukeKa": "",
+        "seibetsu": "男",
+        "uketsukeComent": "",
+        "id": "xxxxxxxxxoxxxxxxxxxo-20240902024026-1",
+        "sinnkannFlag": true
+      }
+    ],
+    "jusinnMatiData": [
+      {
+        "name": "健康",
+        "mainDoctor": "0",
+        "kanjyaNo": "0000000001",
+        "uketsukeKaNo": 0,
+        "uketsukeTime": 102530,
+        "uketsukeNo": 6,
+        "birth": 19510511,
+        "kanaName": "ｼｶｸ ｼﾞｼﾛ",
+        "uketsukeKa": "01",
+        "seibetsu": "男",
+        "uketsukeComent": "",
+        "id": ""
+      },
+      {
+        "name": "健康",
+        "mainDoctor": "0",
+        "kanjyaNo": "0000000001",
+        "uketsukeKaNo": 0,
+        "uketsukeTime": 102604,
+        "uketsukeNo": 7,
+        "birth": 19510511,
+        "kanaName": "ｼｶｸ ｼﾞｼﾛ",
+        "uketsukeKa": "01",
+        "seibetsu": "男",
+        "uketsukeComent": "",
+        "id": ""
+      }
+    ]
+  }
+}
