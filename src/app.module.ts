@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
-import { GraphQLModule } from "@nestjs/graphql";
-import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
+// import { GraphQLModule } from "@nestjs/graphql";
+// import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 // import { join } from "node:path";
 
 import { AppController } from "./app.controller";
@@ -8,6 +8,7 @@ import { AppService } from "./app.service";
 import { logger } from "./common/middleware/logger.middleware";
 import { TimeModule } from "./modules/time/time.module";
 // import { AuthorModule } from "./modules/graphql/authors/author.module";
+// import { DialysisCollaborationModule } from "./modules/graphql/dialysisCollaboration/dialysisCollaboration.module";
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { TimeModule } from "./modules/time/time.module";
     //   driver: ApolloDriver,
     // }),
     // AuthorModule,
+    // DialysisCollaborationModule,
     // #endregion GraphQL ---end
   ],
   controllers: [AppController],
