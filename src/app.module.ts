@@ -7,7 +7,7 @@ import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { logger } from "./common/middleware/logger.middleware";
 import { TimeModule } from "./modules/time/time.module";
-import { AuthorModule } from "./modules/graphql/authors/author.module";
+// import { AuthorModule } from "./modules/graphql/authors/author.module";
 
 @Module({
   imports: [
@@ -21,7 +21,7 @@ import { AuthorModule } from "./modules/graphql/authors/author.module";
     // GraphQLModule.forRoot<ApolloDriverConfig>({
     //   driver: ApolloDriver,
     // }),
-    AuthorModule,
+    // AuthorModule,
     // #endregion GraphQL ---end
   ],
   controllers: [AppController],
