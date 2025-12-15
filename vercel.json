@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "output": {
-    "standalone": true
-  }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs"
 }
