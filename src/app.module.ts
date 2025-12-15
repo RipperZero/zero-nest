@@ -8,7 +8,7 @@ import { AppService } from "./app.service";
 import { logger } from "./common/middleware/logger.middleware";
 import { TimeModule } from "./modules/time/time.module";
 // import { AuthorModule } from "./modules/graphql/authors/author.module";
-// import { DialysisCollaborationModule } from "./modules/graphql/dialysisCollaboration/dialysisCollaboration.module";
+import { DialysisCollaborationModule } from "./modules/graphql/dialysisCollaboration/dialysisCollaboration.module";
 
 @Module({
   imports: [
@@ -23,7 +23,7 @@ import { TimeModule } from "./modules/time/time.module";
     //   driver: ApolloDriver,
     // }),
     // AuthorModule,
-    // DialysisCollaborationModule,
+    DialysisCollaborationModule,
     // #endregion GraphQL ---end
   ],
   controllers: [AppController],

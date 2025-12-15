@@ -1,21 +1,21 @@
-// import { Query, Resolver } from "@nestjs/graphql";
-// import { DialysisCollaborationService } from "./dialysisCollaboration.service";
+import { Query, Resolver } from "@nestjs/graphql";
+import { DialysisCollaborationService } from "./dialysisCollaboration.service";
 
-// @Resolver("DialysisCollaboration")
-// class DialysisCollaborationResolver {
-//   constructor(
-//     private readonly dialysisCollaborationService: DialysisCollaborationService,
-//   ) {}
+@Resolver("DialysisCollaboration")
+class DialysisCollaborationResolver {
+  constructor(
+    private readonly dialysisCollaborationService: DialysisCollaborationService,
+  ) {}
 
-//   @Query("dialysisCollaborationConfig")
-//   queryDialysisCollaborationConfig() {
-//     return this.dialysisCollaborationService.findDialysisCollaborationConfig();
-//   }
+  @Query("dialysisCollaborationConfig")
+  queryDialysisCollaborationConfig() {
+    return this.dialysisCollaborationService.findDialysisCollaborationConfig();
+  }
 
-//   @Query("dialysisCollaborationEditConfig")
-//   queryDialysisCollaborationEditConfig() {
-//     return this.dialysisCollaborationService.findDialysisCollaborationEditConfig();
-//   }
-// }
+  @Query("dialysisCollaborationEditConfig")
+  queryDialysisCollaborationEditConfig() {
+    return this.dialysisCollaborationService.findDialysisCollaborationEditConfig();
+  }
+}
 
-// export { DialysisCollaborationResolver };
+export { DialysisCollaborationResolver };
