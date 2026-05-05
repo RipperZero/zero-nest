@@ -10,8 +10,10 @@ import { Observable } from "rxjs";
 
 @Injectable()
 class AppGuard implements CanActivate {
-  @Inject(Reflector)
-  private readonly reflector: Reflector;
+  constructor(
+    @Inject(Reflector)
+    private readonly reflector: Reflector,
+  ) {}
 
   canActivate(
     context: ExecutionContext,

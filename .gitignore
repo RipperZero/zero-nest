@@ -399,7 +399,10 @@ dist
 .webpack
 .serverless/**/*.zip
 
+# Dist
+.tmp-dist/*
+
 # Lock file
-yarn.lock
-pnpm-lock.yaml
-package.lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# package.lock.json

@@ -27,6 +27,8 @@ const bootstrap = async () => {
   app.use(
     expressSession({
       secret: "zero",
+      resave: false,
+      saveUninitialized: false,
       cookie: {
         maxAge: 100000,
       },
@@ -38,7 +40,7 @@ const bootstrap = async () => {
 
   app.enableCors();
 
-  await app.listen(process.env.PORT ?? 8080);
+  await app.listen(process.env.PORT ?? 8081);
 };
 
 bootstrap();
